@@ -1,0 +1,110 @@
+.side-menu-list {
+  width: 25%;
+  box-shadow: 0px 0px 3px;
+  border: 1px solid lightslategray;
+  border-radius: 10px;
+  background-color: rgba(0, 21, 36, 0.9);
+  height: 100%;
+  margin-top: 30px;
+  padding: 10px 10px 20px;
+
+}
+
+.side-user-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.side-image-box {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.side-menu-box {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.side-ul {
+  padding-left: 0;
+
+}
+
+
+
+
+.side-logo {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-family: BowlbyOneSC-Regular;
+  list-style: none;
+  font-size: 40px;
+  color: crimson;
+  margin: auto;
+  list-style: none;
+}
+
+
+.side-ul-li {
+  list-style: none;
+  margin-bottom: 15px;
+  border-bottom: 1px solid white;
+
+}
+
+
+.side-li {
+  color: white;
+  justify-content: space-around;
+  font-size: 17px;
+}
+
+.side-li:hover {
+  color: crimson;
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+.side-follow {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.side-following a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-following a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.side-following p {
+  color: white;
+  font-size: 12px;
+}
+
+.side-name {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.side-name-li {
+
+  color: white;
+}
+
+.stat {
+  font-size: 13px;
+}

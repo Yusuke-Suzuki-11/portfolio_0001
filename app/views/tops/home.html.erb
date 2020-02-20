@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body>
+    <header class="top-header">
+        <div class="top-main-logo">
+          <%= link_to("UNIVERSE", tops_home_path,class: "top-logo-link")%>
+        </div>
+        <ul class="top-header-menus">
+          <li>
+            <%= link_to "アプリについて" ,"#", class: "top-header-menus-li" %>
+          </li>
+          <li>
+          <%= link_to "新規登録", new_user_registration_path, class: "top-header-menus-li" %>
+          </li>
+          <li>
+          <%= link_to "ログイン", new_user_session_path, class: "top-header-menus-li" %>
+          </li>
+        </ul>   
+    </header>
+<div class="top-main">
+  <div class="top-message">
+    <h1>Take your mark?</h1>
+    <p>ライバルを見つけて、あなたを強くするスポーツコミュニティアプリ</p>    
+    <%= link_to("新規登録", new_user_registration_path, class: "top-signup ") %>
+    <div class="a-loginform">
+      <%= link_to("アカウントをお持ちの方" ,new_user_session_path , class: "top-login")%>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

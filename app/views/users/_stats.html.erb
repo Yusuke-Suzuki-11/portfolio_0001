@@ -1,0 +1,17 @@
+<% @user ||= current_user %>
+<div class="stats show-stat">
+  <% if @user == current_user %>
+  <a href="<%= "/following/#{@user.id}"%>">
+    <%end%>フォロー 
+    <strong id="following" class="stat">
+      <%= @user.followings.count %>
+    </strong>
+  </a>
+  <% if @user == current_user %>
+  <a href="<%= "/followers/#{@user.id}" %>">
+    <%end%>フォロワー 
+    <strong id="followers" class="stat">
+      <%= @user.followers.count %>
+    </strong>
+  </a>
+</div>

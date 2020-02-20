@@ -1,0 +1,134 @@
+//ロゴのフォントはlogoに変数化しています
+@import "bootstrap";
+
+@import "common";
+@import "tops.scss";
+@import "users/devise";
+@import "partial/header";
+@import "partial/side";
+@import "users/show";
+@import "users/edit";
+@import "posts";
+@import "chat";
+
+@font-face {
+  font-family: 'menu-font';
+  src: url('mplus-2p-medium.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'menu-bold';
+  src: url('mplus-1m-bold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "logo";
+  src: url('TitanOne-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+
+  color: white;
+  height: 100%;
+  background-image: linear-gradient(#fbc2eb 0%, #a6c1ee 100%);
+
+}
+
+html {
+  background-image: linear-gradient(#fbc2eb 0%, #a6c1ee 100%);
+}
+
+
+
+
+
+
+#nicoscreen {
+  width: 1024px;
+  height: 576px;
+  text-align: center;
+}
+
+
+//follow
+.follow-box {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.follow-image {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.followname {
+  margin-right: 15px;
+
+  font-size: 14px;
+}
+
+
+.follow-link-li {
+  font-size: 14px;
+  color: crimson;
+}
+
+.follow-subbox {
+  display: flex;
+  margin: 50px 0 0 20px;
+}
+
+.follow-subsub-box {
+  width: 100%;
+  display: flex;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.follow-chat {
+  background-color: crimson;
+  font-size: 10px;
+  color: white;
+  margin-left: 10px;
+  border-radius: 7px;
+
+}
+
+.follow-nil {
+  height: 100px;
+  margin-top: 30px;
+}
+
+.follow-nil p {
+  color: black;
+}
+
+.follow-nil-cont {
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgba(0, 21, 36, 0.9);
+  box-shadow: 0px 0px 3px;
+  border: 1px solid lightslategray;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.follow-nil-copy {
+  text-align: center;
+}
+
+
+.top-header-menus li {
+  float: left;
+  margin-left: 15px;
+  list-style: none;
+  margin-top: 44px;
+  border-radius: 10px;
+  background-color: none;
+}

@@ -1,0 +1,105 @@
+.sign-main {
+  background-image: url(main_3.jpg);
+  background-size: cover;
+}
+
+.sign-cont {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 120px 75px 100px;
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.signin-devise-card {
+  padding: 20px 0;
+  background-color: rgba(0, 21, 36, 0.9);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.signup-devise-card {
+  padding: 20px 0;
+  background-color: rgba(0, 21, 36, 0.9);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.sign-form-wrap {
+  max-width: 300px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.sign-form-control {
+  border: 1px solid #dcdfe6;
+  font-size: inherit;
+}
+
+.sign-logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: lighter;
+  color: crimson;
+  font-family: "logo";
+}
+
+.sign-copy {
+  color: white;
+  font-size: 14px;
+}
+
+.action {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.sign-btn {
+  color: white;
+  background-color: rgb(220, 20, 60);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 24px;
+  display: inline;
+}
+
+.sign-devise-link {
+  text-align: center;
+  margin: 0;
+}
+
+.sign-inlink {
+  color: white;
+  font-size: 12px;
+  border-bottom: 1px solid white;
+}
+
+.sign-inlink:hover {
+  color: crimson;
+}
+
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .sign-main {
+    padding: 75px 0;
+  }
+
+  .sign-devise-card {
+    background-color: #fafafa;
+  }
+}

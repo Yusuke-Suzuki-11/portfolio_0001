@@ -1,0 +1,38 @@
+<div id="edit-main">
+  <%= render "partial/side"%>
+  
+  <div class="chat-cont">
+
+
+<div class="chatPage">
+
+  <div class="chat-header">
+    <div class="chatPartner">
+      <div class="chat-partner">
+        <%= image_tag avatar_url(@user), class: "post-profile-icon" %>
+      </div>
+      <div class="chat-onother-name">
+        <%= @chat_room_user.name %>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="messagesArea messages">
+      <%= render @chat_messages %>
+    </div>
+  
+  
+
+  <form class="messageInputForm">
+    <div>
+      <input type="text" data-behavior="room_speaker" class="messageInputForm_input" placeholder="メッセージを入力...">
+    </div>
+  </form>
+
+
+</div>
+</div>

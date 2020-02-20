@@ -1,0 +1,73 @@
+<div id="edit-main">
+  <%= render "partial/side"%>
+  <div class="edit-cont">
+    <div class="show-user-image">
+      <%= image_tag avatar_url(@user), class: "side-user-image " %>
+    </div>
+    <div class="show-username">
+      <h3>
+        <%= @user.name %>
+      </h3>
+    </div>
+    <% if @user == current_user %>
+    <div class="show-username">
+      <p>
+        <%= @user.email %>
+      </p>
+    </div>
+    <% end %>
+    <div class="show-stat">
+      <%= render 'stats' %>
+      <%= render 'follow_form' %>
+    </div>
+    <% if @user == current_user %>
+    <div class="show-prof">
+      <%= link_to "プロフィールを編集", edit_user_registration_path, class: "show-btn" %>
+      <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
+    </div>
+    <% end %>
+
+
+
+  <div class="show-mini-box">
+
+
+    <div class="show-box-sub">
+      性別：
+      <%= @user.gender %>
+    </div>
+
+
+    <div class="show-box-sub">
+      <div>自己紹介</div>
+      <%= @user.self_introduction %>
+    </div>
+
+      <div class="show-box-sub">
+      専門競技：
+      <%= @user.sports_event %>
+      </div>
+
+      <div class="show-box-sub">
+      競技ステージ：
+      <%= @user.sports_stage %>
+      </div>
+
+      <div class="show-box-sub">
+      競技レベル：
+      <%= @user.sports_level %>
+      </div>
+
+    </div>
+
+
+<% if @user == current_user %>
+    <div class="show-signout">
+      <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: "show-signout-li" %>
+    </div>
+<%end%>
+
+
+
+  </div>
+</div>

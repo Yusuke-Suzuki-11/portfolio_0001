@@ -1,0 +1,31 @@
+<div class="sign-main ">
+<div class="sign-cont">
+  <div class="devise-card signin-devise-card">
+    <div class="form-wrap sign-form-wrap">
+      <div class="form-group text-center ">
+        <h1 class="sign-logo">UNIVERSE</h1>
+        <p class="sign-copy">ログインしてライバルと強くなろう</p>
+      </div>
+      <%= form_with scope: resource, as: resource_name, url: session_path(resource_name), local: true do |f| %>
+        <%= devise_error_messages! %>
+        <div class="form-group signform-group">
+          <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control sign-form-control" %>
+        </div>
+
+        <div class="form-group signform-group">
+          <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "form-control sign-form-control" %>
+        </div>
+
+        <div class="action">
+          <%= f.submit "ログイン", class: "sign-btn" %>
+        </div>
+      <% end %>
+
+
+      <p class="sign-devise-link">
+        <%= link_to "アカウントを登録する", "#", class:"sign-inlink" %>
+      </p>
+
+    </div>
+  </div>
+</div>

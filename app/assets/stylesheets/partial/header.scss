@@ -1,0 +1,55 @@
+.sign-header {
+  height: 80px;
+  z-index: 3;
+  background-color: rgb(0, 21, 36, );
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.main-logo {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.logo-link {
+  font-size: 45px;
+  color: crimson;
+  font-family: "logo";
+}
+
+.logo-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header-menus {
+  float: right;
+  padding-right: 20px;
+}
+
+.header-menus li {
+  float: left;
+  margin-left: 15px;
+  list-style: none;
+  margin-top: 44px;
+
+}
+
+.header-menus-li {
+  font-size: 13px;
+
+  color: crimson;
+  margin: 0 10px;
+  font-family: "menu-bold";
+}
+
+.header-menus-li:hover {
+  color: white;
+  text-decoration: none;
+}

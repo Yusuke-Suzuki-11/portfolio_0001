@@ -1,0 +1,51 @@
+<div id="edit-main">
+  <%= render "partial/side"%>
+
+
+
+<div class="edit-cont">
+<% @users.each do |user| %>
+
+
+
+
+
+
+<div class="follow-box">
+<div class="follow-subsub-box">
+  <div class="follow-image">
+    <%= image_tag avatar_url(user), class: "post-profile-icon" %>
+  </div>
+  
+
+<div class="follow-subbox">
+  <div class="followname">
+    <%= user.name %>
+  </div>
+
+  <div class="follow-link">
+    <%= link_to '詳細', user_path(user),class: "follow-link-li" %>
+  </div>
+
+  <div class="follow-chat-box">
+    <%= form_tag :chat_index, method: :post do %>
+      <input name="user_id" type="hidden" value="<%= user.id %>" />
+      <%= submit_tag 'メッセージ', class: "follow-chat" %>
+    <% end %>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<% end %>
+</div>
+
+
+
+
+
+

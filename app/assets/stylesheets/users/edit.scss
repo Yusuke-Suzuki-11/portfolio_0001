@@ -1,0 +1,72 @@
+#edit-main {
+  position: relative;
+  z-index: 2;
+  top: 80px;
+  left: 0;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+
+.edit-cont {
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgba(0, 21, 36, 0.9);
+  box-shadow: 0px 0px 3px;
+  border: 1px solid lightslategray;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.edit-devise-card {
+  width: 85%;
+  margin: auto;
+}
+
+.edit-form-wrap {
+
+  width: 100%;
+  margin: 30px auto;
+}
+
+.edit-form-group {
+  padding-top: 5px;
+  color: white;
+}
+
+.edit-form-control {
+  border: 1px solid #dcdfe6;
+  font-size: inherit;
+}
+
+.edit-user-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.edit-image-box {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.edit-left {
+  margin-left: 20px;
+}
+
+.edit-form-bottomborder {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 30px;
+  padding-top: 5px;
+  width: 30%;
+}
+
+.edit-select {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 30%;
+}

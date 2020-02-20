@@ -1,0 +1,39 @@
+<div class="main-logo">
+  <%= link_to("UNIVERSE", tops_home_path, class: "logo-link")%>
+</div>
+        
+<ul class="header-menus">
+  <% if current_user %>
+
+  <li>
+    <%= link_to "プロフィール", user_path(current_user), class: "header-menus-li" %>
+  </li>
+
+  <li>
+    <%= link_to "投稿", new_post_path, class: "header-menus-li" %>
+  </li>
+
+  <li>
+    <%= link_to "ログアウト", new_post_path, class: "header-menus-li" %>
+  </li>
+
+
+
+<% else %>
+
+
+  <li>
+    <%= link_to "アプリの使い方", "#", class: "header-menus-li" %>
+  </li>
+
+  <li>
+    <%= link_to "新規登録", new_user_registration_path, class: "header-menus-li" %>
+  </li>
+
+  <li>
+    <%= link_to "ログイン", new_user_session_path, class: "header-menus-li" %>
+  </li>
+
+
+  <% end %>
+</ul>
