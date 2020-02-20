@@ -3,7 +3,6 @@
     outline: 0;
   }
 
-
   .linkToMatching {
     width: 30px;
     height: 30px;
@@ -21,12 +20,10 @@
       text-align: center;
     }
 
-
     &>img {
       width: 100%;
       text-align: center;
     }
-
   }
 
   .messagesArea {
@@ -51,20 +48,13 @@
         border-radius: 8px;
         background: #f1f1f1;
 
-        &:before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: -20px;
-          margin-top: -10px;
-          border: 10px solid transparent;
-          border-right: 10px solid #f1f1f1;
-        }
+
       }
 
       &_current_user {
         background: #fd5068;
         color: #fff;
+
 
         &:before {
           border-right: 10px solid #fd5068;
@@ -75,8 +65,8 @@
 
   .messageInputForm {
     position: fixed;
-    bottom: 50px;
-    width: 50%;
+    bottom: 30px;
+    width: 64%;
 
     &_input {
       width: 100%;
@@ -97,7 +87,6 @@
 
 .chat-onother-name {
   text-align: center;
-  color: crimson;
 }
 
 .chat-header {
@@ -115,4 +104,25 @@
   border-radius: 50%;
   text-align: center;
   margin: auto;
+}
+
+.chat-top {
+  margin-top: 20px;
+}
+
+.left-message {
+  text-align: left;
+
+}
+
+.right-message {
+  text-align: right;
+}
+
+
+
+.chat-background {
+  background-color: rgba(0, 21, 36, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }

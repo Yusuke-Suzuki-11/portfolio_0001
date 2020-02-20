@@ -1,14 +1,23 @@
-<div class="message">
-  <span class="message__name">
-    <%= chat_message.user.name %>:
-  </span>
+<div class="message"> 
   <% if chat_message.user.id == current_user.id %>
-    <div class="message__text message_current_user">
-      <div><%= chat_message.message %></div>
+    <span class="message__name">
+      <%= chat_message.user.name %>:
+    </span>
+    <div class="message__text message_current_user left-message">
+      <div>
+        <%= chat_message.message %>
+      </div>
     </div>
-  <% else %>
-    <div class="message__text">
-      <div><%= chat_message.message %></div>
+    <% else %>
+    <div class="raight-message">
+      <div class="message__text ">
+        <div>
+          <%= chat_message.message %>
+        </div>
+      </div>
+      <span class="message__name">
+        :<%= chat_message.user.name %>
+      </span>
     </div>
-  <% end %>
+      <% end %>
 </div>
