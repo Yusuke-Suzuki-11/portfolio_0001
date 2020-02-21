@@ -15,6 +15,13 @@
   margin-top: 10px;
 }
 
+.top-main-logo :hover {
+  color: #FF8C00;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .top-logo-link {
   font-family: "logo";
   font-size: 45px;
@@ -78,7 +85,6 @@
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 10px;
-
 }
 
 .top-main p {

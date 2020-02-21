@@ -1,25 +1,29 @@
 #edit-main {
   position: relative;
-  z-index: 2;
   top: 80px;
   left: 0;
   width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
 }
 
+.white {
+  color: white;
+}
+
 .edit-cont {
-  margin: 0 auto;
+  margin: auto;
   width: 70%;
   background-color: rgba(0, 21, 36, 0.9);
-  box-shadow: 0px 0px 3px;
   border: 1px solid lightslategray;
   height: 100%;
   border-radius: 10px;
   margin-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 10px;
 }
 
 .edit-devise-card {
@@ -69,4 +73,14 @@
   padding-top: 20px;
   padding-bottom: 5px;
   width: 30%;
+}
+
+.posts-hover :hover {
+  color: crimson;
+  text-decoration: none;
+  margin: auto;
+}
+
+.posts-caption {
+  text-align: center;
 }

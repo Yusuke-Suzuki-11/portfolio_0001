@@ -1,27 +1,21 @@
 <div id="edit-main">
   <%= render "partial/side"%>
-
-    <div class="edit-cont">
-            <div class="postsnew-card">
-            <div class="new-box">
-              <%= form_with model: @post, class: "upload-images p-0 border-0" do |f| %>
-                    <%= image_tag avatar_url(current_user), class: "post-profile-icon new-user-image" %>
-                    <div class="postsnew-form">
-                    <%= f.text_field :caption, class: "form-control ", placeholder: "動画タイトル" %>
-                    </div>
-
-
-
-
-
-                  <%= f.fields_for :movies do |m| %>
-                    <%= m.file_field :video,　class:"" %>
-                      <% end %>
-<div class="postsnew-btn">
-                <%= f.submit "投稿する", class: "btn postsnew-btn-btn" %>
-                </div>
-                  <% end %>
-            </div>
-            </div>
+  <div class="edit-cont">
+    <div class="postsnew-card">
+      <div class="new-box">
+        <%= form_with model: @post do |f| %>
+          <%= image_tag avatar_url(current_user), class: "post-profile-icon new-user-image" %>
+          <div class="postsnew-form">
+            <%= f.text_field :caption, class: "form-control ", placeholder: "タイトル" %>
+          </div>
+          <%= f.fields_for :movies do |m| %>
+            <%= m.file_field :video,　class:"" %>
+          <% end %>
+          <div class="postsnew-btn">
+            <%= f.submit "投稿する", class: "btn postsnew-btn-btn" %>
+          </div>
+        <% end %>
+      </div>
     </div>
-
+  </div>
+</div>

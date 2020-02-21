@@ -36,12 +36,9 @@ html {
 
 
 body {
-  font-family: "main-font";
-  color: white;
-  background-image: linear-gradient(#fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
   background-attachment: fixed !important;
 }
-
 
 #nicoscreen {
   width: 1024px;
@@ -49,6 +46,13 @@ body {
   text-align: center;
 }
 
+
+.top-main h1 {
+  font-size: 90px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 10px;
+}
 
 //follow
 .follow-box {
@@ -127,4 +131,22 @@ body {
   margin-top: 44px;
   border-radius: 10px;
   background-color: none;
+}
+
+.top-main-logo :hover {
+  color: #FF8C00;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+
+  -webkit-text-fill-color: transparent;
+}
+
+.hover :hover {
+  color: crimson;
+}
+
+
+.z-index {
+  z-index: 4;
+  position: relative;
+  top: 80px;
 }

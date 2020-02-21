@@ -42,7 +42,9 @@
 
 .card-header {
   background-color: rgba(0, 21, 36, 1);
-  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
 }
 
 
@@ -98,7 +100,9 @@
   width: 65%;
 }
 
-
+.posts-index-all-card {
+  margin-bottom: 70px;
+}
 
 
 
@@ -130,6 +134,8 @@
   width: 25px;
   background-size: 30px !important;
 }
+
+
 
 .post-time {
   margin: 0;
@@ -175,11 +181,24 @@
   margin-top: auto;
 }
 
-
-
 .card-body-color {
   background-color: rgba(0, 21, 36, 0.9);
   border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid lightslategray;
+  border-right: 1px solid lightslategray;
+  box-shadow: 0px 0px 10px;
+}
+
+
+#card-body-color {
+  background-color: rgba(0, 21, 36, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid lightslategray;
+  border-right: 1px solid lightslategray;
+  border-left: 1px solid lightslategray;
+  box-shadow: 0px 0px 10px;
 }
 
 
@@ -250,7 +269,7 @@
 }
 
 .posts-show-comment {
-  width: 97%;
+  width: 98%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -259,4 +278,26 @@
 .card-header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.posts-index-cont {
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+#card-header-sub {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 1px solid lightslategray;
+  border-right: 1px solid lightslategray;
+  border-left: 1px solid lightslategray;
+  box-shadow: 0px 0px 10px;
+}
+
+#card-header-show-sub {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
 }

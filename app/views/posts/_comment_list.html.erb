@@ -1,11 +1,10 @@
 <% post.comments.each do |comment| %>
-  <div class="mb-2">
+  <div class="mb-2 ">
     <% if comment.user == current_user %>
       <%= link_to "", post_comment_path(post.id, comment), method: :delete, remote: true, class: "delete-comment" %>
     <% end %>
     <span>
-      <strong>
-      
+      <strong class="posts-hover">
         <%= link_to comment.user.name, user_path(comment.user), class: "no-text-decoration black-color" %>：
       </strong>
     </span>

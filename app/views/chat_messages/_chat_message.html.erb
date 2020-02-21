@@ -1,4 +1,4 @@
-<div class="message"> 
+<div class="message">
   <% if chat_message.user.id == current_user.id %>
     <span class="message__name">
       <%= chat_message.user.name %>:
@@ -8,8 +8,8 @@
         <%= chat_message.message %>
       </div>
     </div>
-    <% else %>
-    <div class="raight-message">
+  <% else %>
+    <div class="right-message right-message">
       <div class="message__text ">
         <div>
           <%= chat_message.message %>
@@ -19,5 +19,5 @@
         :<%= chat_message.user.name %>
       </span>
     </div>
-      <% end %>
+  <% end %>
 </div>
