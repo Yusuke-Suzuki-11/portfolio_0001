@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
-gem 'devise', '~> 4.6.1'
+gem 'devise', '~> 4.7.1'
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
 gem 'hirb'
