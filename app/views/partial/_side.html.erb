@@ -2,7 +2,7 @@
     <div class="side-menu-box">
       <div class="side-image-box">
         <%= link_to user_path(current_user), class: "no-text-decoration" do %>
-          <%= image_tag avatar_url(current_user), class: "side-user-image" %>
+          <%= image_tag default_photo(current_user).url, class: "side-user-image" %>
             <% end %>
       </div>
       <div class="side-name">

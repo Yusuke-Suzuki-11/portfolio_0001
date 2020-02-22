@@ -8,10 +8,13 @@ class User < ApplicationRecord
   has_many :followers, through: :follower_relationships
   has_many :likes
   has_many :comments
+
+  mount_uploader :profile_photo, ProfilePhotoUploader
   
 
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
   validates :name, presence: true, length: { maximum: 50 }
+  
 
   enum gender: %i(男子 女子)
 

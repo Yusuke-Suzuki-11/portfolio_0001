@@ -1,6 +1,4 @@
 class ChatController < ApplicationController
-
-
   def create
   current_user_chat_rooms = ChatRoomUser.where(user_id: current_user.id).map(&:chat_room)
   chat_room = ChatRoomUser.where(chat_room: current_user_chat_rooms, user_id: params[:user_id]).map(&:chat_room).first
@@ -12,10 +10,15 @@ class ChatController < ApplicationController
   redirect_to action: :show, id: chat_room.id
 end
 
-def show
-  chat_room = ChatRoom.find_by(id: params[:id])
-  @user = User.find_by(id: current_user.id)
-  @chat_room_user = chat_room.chat_room_users.where.not(user_id: current_user.id).first.user
-  @chat_messages = ChatMessage.where(chat_room: chat_room).order(:created_at)
-end
+  def show
+    chat_room = ChatRoom.find_by(id: params[:id])
+    if chat_room.chat_room_users.where(user_id: current_user.id).exists?
+      @user = current_user
+      @chat_room_user = chat_room.chat_room_users.where.not(user_id: current_user.id).first.user
+      @chat_messages = ChatMessage.where(chat_room: chat_room).order(:created_at)
+    else
+      redirect_to root_path
+      flash[:alert] = "正規のチャットルームに入室してください"
+    end
+  end
 end

@@ -1,11 +1,11 @@
 <div id="edit-main">
   <%= render "partial/side"%>
-  <div class="edit-cont white">
+  <div class="edit-cont">
     <% @users.each do |user| %>
-      <div class="follow-box">
+      <div class="follow-box white">
         <div class="follow-subsub-box">
           <div class="follow-image">
-            <%= image_tag avatar_url(user), class: "post-profile-icon" %>
+            <%= image_tag default_photo(user).url, class: "post-profile-icon" %>
           </div>
           <div class="follow-subbox">
             <div class="followname">

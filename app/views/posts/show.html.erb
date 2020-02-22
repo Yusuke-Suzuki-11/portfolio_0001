@@ -3,7 +3,7 @@
   <div class="edit-cont">
     <div class="card-header  d-flex" id="card-header-show-sub">
       <%= link_to user_path(@post.user), class: "no-text-decoration" do %>
-        <%= image_tag avatar_url(@post.user), class: "post-profile-icon" %>
+        <%= image_tag default_photo(@post.user).url, class: "post-profile-icon" %>
       <% end %>
       <%= link_to user_path(@post.user), class: "no-text-decoration user-name posts-hover", title: @post.user.name do %>
         <strong><%= @post.user.name %></strong>

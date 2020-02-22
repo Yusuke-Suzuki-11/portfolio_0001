@@ -5,11 +5,7 @@ module ApplicationHelper
     "https://www.gravatar.com/avatar/#{gravatar_id}.jpg"
   end
 
-  def defolt_photo(user)
-    if user.profile_photo == nil
-      "main_4.png"
-    else
+  def default_photo(user)
       user.profile_photo
-    end
   end
 end
