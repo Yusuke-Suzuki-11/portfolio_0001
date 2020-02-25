@@ -86,7 +86,7 @@ body {
 .follow-subsub-box {
   width: 100%;
   display: flex;
-  margin: 20px 0 30px;
+  margin: 0 0 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -150,4 +150,9 @@ body {
   z-index: 4;
   position: relative;
   top: 80px;
+}
+
+.follow-page {
+  text-align: center;
+  margin-top: 20px;
 }

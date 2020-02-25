@@ -5,17 +5,7 @@
 <ul class="header-menus">
   <% if current_user %>
 
-  <li>
-    <%= link_to "プロフィール", user_path(current_user), class: "header-menus-li" %>
-  </li>
-
-  <li>
-    <%= link_to "投稿", new_post_path, class: "header-menus-li" %>
-  </li>
-
-  <li>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header-menus-li" %>
-  </li>
+  
 
 
 

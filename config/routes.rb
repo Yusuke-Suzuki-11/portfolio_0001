@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/followers/:id' => 'users#followers'
 
 
+
   get '/tops/home' => "tops#home"
   resources :relationships, only: %i(create destroy)
   resources :chat, only: %i(create show)

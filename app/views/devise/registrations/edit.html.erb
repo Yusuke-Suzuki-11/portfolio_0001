@@ -11,7 +11,7 @@
             <div>
               <%= f.label :profile_photo, "画像" %>
             </div>
-            <%= f.file_field :profile_photo, class: "" %>
+            <%= f.file_field :profile_photo %>
             <div class="form-group edit-form-group">
               <%= f.label :name, "名前" %>
               <%= f.text_field :name, autofocus: true, class: "form-control edit-form-control" %>
@@ -31,6 +31,10 @@
                 <%= f.radio_button :gender, :女子 %>
               </div>
               <div class="form-group  edit-select">
+                <p>地域を選択</p>
+                <%= f.select :area, options_for_select(User.areas.keys), {}, class: 'form-control input-sm' %>
+              </div>
+              <div class="form-group  edit-select">
                 <p>スポーツを選択</p>
                 <%= f.select :sports_event, options_for_select(User.sports_events.keys), {}, class: 'form-control input-sm' %>
               </div>
@@ -44,11 +48,11 @@
               </div>
               <div class="form-group edit-form-group">
                 <%= f.label :password, "パスワード" %>
-                <%= f.password_field :password, autofocus: "off", class: "form-control edit-form-control" %>
+                <%= f.password_field :password, autofocus: "off", class: "form-control edit-form-control", placeholder: "変更の場合に記入" %>
               </div>
               <div class="form-group edit-form-group">
                 <%= f.label :password_confirmation, "パスワードの確認" %>
-                <%= f.password_field :password_confirmation, autofocus: "off", class: "form-control edit-form-control" %>
+                <%= f.password_field :password_confirmation, autofocus: "off",placeholder: "変更の場合に記入", class: "form-control edit-form-control" %>
               </div>
               <%= f.submit "変更する", class: "sign-btn" %>
             </div>
