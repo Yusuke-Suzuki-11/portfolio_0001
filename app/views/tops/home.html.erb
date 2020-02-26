@@ -12,8 +12,8 @@
   </head>
   <body>
     <header class="top-header">
-        <div class="top-main-logo">
-          <%= link_to("UNIVERSE", tops_home_path,class: "top-logo-link")%>
+        <div class="top-main-logo-link">
+          <%= link_to("UNIVERSE", tops_home_path, class: "top-logo-link")%>
         </div>
         <ul class="top-header-menus">
           <li>
@@ -27,15 +27,15 @@
           </li>
         </ul>   
     </header>
-<div class="top-main">
-  <div class="top-message">
-    <h1>Take your mark?</h1>
-    <p>ライバルを見つけて、あなたを強くするスポーツコミュニティアプリ</p>    
-    <%= link_to("新規登録", new_user_registration_path, class: "top-signup ") %>
-    <div class="a-loginform">
-      <%= link_to("アカウントをお持ちの方" ,new_user_session_path , class: "top-login")%>
+    <div class="top-main">
+      <div class="top-message">
+        <h1>Take your mark?</h1>
+        <p>ライバルを見つけて、あなたを強くするスポーツコミュニティアプリ</p>    
+        <%= link_to("新規登録", new_user_registration_path, class: "top-signup ") %>
+        <div class="a-loginform">
+          <%= link_to("アカウントをお持ちの方" ,new_user_session_path , class: "top-login")%>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   </body>
 </html>

@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.top-main-logo {
+.top-main-logo-link {
   float: left;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -15,29 +15,24 @@
   margin-top: 10px;
 }
 
-.top-main-logo :hover {
-  color: #FF8C00;
-  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .top-logo-link {
   font-family: "logo";
   font-size: 45px;
   color: crimson;
 }
 
-
-.top-logo-link:hover {
-  color: white;
-  text-decoration: none;
+.top-main-logo-link :hover {
+  color: #FF8C00;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-family: "logo";
 }
 
 .top-header-menus {
   float: right;
   margin-right: 20px;
-
 }
 
 .top-header-menus li {
@@ -89,7 +84,6 @@
 
 .top-main p {
   font-size: 15px;
-
 }
 
 .top-signup {

@@ -1,4 +1,3 @@
-
 <% provide(:title, 'Sign up') %>
 <div class="b-img">
   <h1 class="new-name">アカウント登録</h1>
@@ -8,13 +7,11 @@
         <%= devise_error_messages! %>
         <%= f.label :name, "アカウント名", class: 'new-box' %>
         <%= f.text_field :name, class: 'form-control', placeholder: "アカウント名を入力" %>
-
         <%= f.label :email, "メールアドレス", class: 'new-form-li'%>
         <%= f.email_field :email, class: 'form-control', placeholder: "E-mailを入力" ,autocomplete: "email"%>
-
         <%= f.label :password, "パスワード", class: 'new-form-li'%>
         <div class="edit-errore">
-        <% if @minimum_password_length %>
+          <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %>文字以上入力してください)</em>
           <% end %><br/>
         </div>

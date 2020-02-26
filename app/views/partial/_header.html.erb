@@ -1,29 +1,17 @@
 <div class="main-logo">
   <%= link_to("UNIVERSE", tops_home_path, class: "logo-link")%>
 </div>
-        
 <ul class="header-menus">
   <% if current_user %>
-
-  
-
-
-
 <% else %>
-
-
   <li>
     <%= link_to "アプリの使い方", "#", class: "header-menus-li" %>
   </li>
-
   <li>
     <%= link_to "新規登録", new_user_registration_path, class: "header-menus-li" %>
   </li>
-
   <li>
     <%= link_to "ログイン", new_user_session_path, class: "header-menus-li" %>
   </li>
-
-
   <% end %>
 </ul>
