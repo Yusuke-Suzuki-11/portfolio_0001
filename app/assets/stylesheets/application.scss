@@ -1,7 +1,7 @@
 //ロゴのフォントはlogoに変数化しています
 @import "bootstrap";
 @import "common";
-@import "tops.scss";
+@import "tops";
 @import "users/devise";
 @import "partial/header";
 @import "partial/side";
@@ -12,19 +12,19 @@
 
 @font-face {
   font-family: 'main-font';
-  src: url('mplus-2p-medium.ttf') format('truetype');
+  src: asset_url('mplus-2p-medium.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'menu-bold';
-  src: url('mplus-1m-bold.ttf') format('truetype');
+  src: asset_url('mplus-1m-bold.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: "logo";
-  src: url('TitanOne-Regular.ttf') format("truetype");
+  src: asset_url('TitanOne-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
