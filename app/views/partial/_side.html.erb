@@ -1,48 +1,44 @@
 <div class="side-menu-list">
-    <div class="side-menu-box">
-      <div class="side-image-box">
-        <%= link_to user_path(current_user), class: "no-text-decoration" do %>
-          <%= image_tag default_photo(current_user).url, class: "side-user-image" %>
-            <% end %>
-      </div>
-      <div class="side-name">
-        <%=link_to current_user.name, user_path(current_user), class: "side-name-li" %>
-      </div>
-      <div class="side-follow">
-        <div class="side-following">
-          <a href="<%= " /following/#{current_user.id} " %>">
-            <div id="following" class="stat">
-              <%= current_user.followings.count %>
-            </div>
-            <p>フォロー</p>
-          </a>
-        </div>
-        <div class="side-following">
-          <a href="<%= " /followers/#{current_user.id} " %>">
-            <div id="following" class="stat">
-              <%= current_user.followers.count %>
-            </div>
-            <p>フォロワー</p>
-          </a>
-        </div>
-      </div>
-      
-      <ul class="side-ul">
-        <li class="side-ul-li">
-          <%= link_to("プロフィール" ,user_path(current_user) , class:"side-li" )%>
-        </li>
-        <li class="side-ul-li">
-          <%= link_to("新規投稿" ,new_post_path , class:"side-li" )%>
-        </li>
-        <li class="side-ul-li">
-          <%= link_to("投稿一覧" ,root_path, class:"side-li" )%>
-        </li>
-        <li class="side-ul-li">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "side-li" %>
-        </li>
-        
-        
-      </ul>
-    
+  <div class="side-menu-box">
+    <div class="side-image-box">
+      <%= link_to user_path(current_user), class: "no-text-decoration" do %>
+        <%= image_tag default_photo(current_user).url, class: "side-user-image" %>
+      <% end %>
     </div>
+    <div class="side-name">
+      <%=link_to current_user.name, user_path(current_user), class: "side-name-li" %>
+    </div>
+    <div class="side-follow">
+      <div class="side-following">
+        <a href="<%= " /following/#{current_user.id} " %>">
+          <div id="following" class="stat">
+            <%= current_user.followings.count %>
+          </div>
+          <p>フォロー</p>
+        </a>
+      </div>
+      <div class="side-following">
+        <a href="<%= " /followers/#{current_user.id} " %>">
+          <div id="following" class="stat">
+            <%= current_user.followers.count %>
+          </div>
+          <p>フォロワー</p>
+        </a>
+      </div>
+    </div>
+    <ul class="side-ul">
+      <li class="side-ul-li">
+        <%= link_to("プロフィール" ,user_path(current_user) , class:"side-li" )%>
+      </li>
+      <li class="side-ul-li">
+        <%= link_to("新規投稿" ,new_post_path , class:"side-li" )%>
+      </li>
+      <li class="side-ul-li">
+        <%= link_to("投稿一覧" ,root_path, class:"side-li" )%>
+      </li>
+      <li class="side-ul-li">
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "side-li" %>
+      </li>
+    </ul>
   </div>
+</div>

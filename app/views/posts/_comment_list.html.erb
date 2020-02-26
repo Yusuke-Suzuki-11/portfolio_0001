@@ -8,6 +8,8 @@
         <%= link_to comment.user.name, user_path(comment.user), class: "no-text-decoration black-color" %>：
       </strong>
     </span>
-    <span><%= comment.comment %></span>
+    <span>
+      <%= comment.comment %>
+    </span>
   </div>
 <% end %>

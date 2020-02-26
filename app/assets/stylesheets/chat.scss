@@ -47,14 +47,11 @@
         font-size: 16px;
         border-radius: 8px;
         background: #f1f1f1;
-
-
       }
 
       &_current_user {
         background: #fd5068;
         color: #fff;
-
 
         &:before {
           border-right: 10px solid #fd5068;
@@ -95,7 +92,6 @@
   background-color: rgba(0, 21, 36, 0.9);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-
 }
 
 .chat-partner {
@@ -112,14 +108,11 @@
 
 .left-message {
   text-align: left;
-
 }
 
 .right-message {
   text-align: right;
 }
-
-
 
 .chat-background {
   background-color: rgba(0, 21, 36, 0.1);

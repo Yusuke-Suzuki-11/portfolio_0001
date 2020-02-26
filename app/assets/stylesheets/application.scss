@@ -1,6 +1,5 @@
 //ロゴのフォントはlogoに変数化しています
 @import "bootstrap";
-
 @import "common";
 @import "tops.scss";
 @import "users/devise";
@@ -34,7 +33,6 @@ html {
   height: 100%;
 }
 
-
 body {
   background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
   background-attachment: fixed !important;
@@ -45,7 +43,6 @@ body {
   height: 576px;
   text-align: center;
 }
-
 
 .top-main h1 {
   font-size: 90px;
@@ -68,10 +65,8 @@ body {
 
 .followname {
   margin-right: 15px;
-
   font-size: 14px;
 }
-
 
 .follow-link-li {
   font-size: 14px;
@@ -96,7 +91,6 @@ body {
   color: white;
   margin-left: 10px;
   border-radius: 7px;
-
 }
 
 .follow-nil {
@@ -124,7 +118,6 @@ body {
   z-index: 6;
 }
 
-
 .top-header-menus li {
   float: left;
   margin-left: 15px;
@@ -137,14 +130,12 @@ body {
 .top-main-logo :hover {
   color: #FF8C00;
   background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
-
   -webkit-text-fill-color: transparent;
 }
 
 .hover :hover {
   color: crimson;
 }
-
 
 .z-index {
   z-index: 4;
