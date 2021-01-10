@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+ class PostsController < ApplicationController
   #投稿した情報をログインユーザーだけに見せる
   before_action :authenticate_user!
   before_action :set_post, only: %i(show destroy)
@@ -35,7 +35,6 @@ class PostsController < ApplicationController
     end
     redirect_to root_path
   end
-
 
   private
     def post_params

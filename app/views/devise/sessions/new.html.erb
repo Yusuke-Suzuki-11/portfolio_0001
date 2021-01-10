@@ -9,10 +9,10 @@
         <%= form_with scope: resource, as: resource_name, url: session_path(resource_name), local: true do |f| %>
           <%= devise_error_messages! %>
           <div class="form-group signform-group">
-            <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control sign-form-control" %>
+            <%= f.email_field :email, autofocus: true, value: "11111@example.com", placeholder: "メールアドレス", class: "form-control sign-form-control" %>
           </div>
           <div class="form-group signform-group">
-            <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "form-control sign-form-control" %>
+            <%= f.password_field :password, autocomplete: "off", value: "1111111111", placeholder: "パスワード", class: "form-control sign-form-control" %>
           </div>
           <div class="action">
             <%= f.submit "ログイン", class: "sign-btn" %>

@@ -45,3 +45,42 @@ Movie.create!(
   post_id:1
 )
 
+ChatRoom.create!(
+  id: 1
+)
+
+ChatRoomUser.create!(
+  chat_room_id: 1,
+  user_id: 1
+)
+
+ChatRoomUser.create!(
+  chat_room_id: 1,
+  user_id: 2
+)
+
+ChatMessage.create!(
+  id: 1,
+  chat_room_id: 1,
+  user_id: 1,
+  message: 'こんにちはAさん'
+)
+
+ChatMessage.create!(
+  id: 2,
+  chat_room_id: 1,
+  user_id: 2,
+  message: 'こんにちはテストユーザーさん'
+)
+
+ChatMessage.create!(
+  id: 3,
+  chat_room_id: 1,
+  user_id: 2,
+  message: '合同練習しましょう！'
+)
+
+Relationship.create!(
+  follower_id: 1,
+  following_id: 2
+)
