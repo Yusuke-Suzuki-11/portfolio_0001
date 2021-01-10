@@ -17,7 +17,7 @@ User.create!(
   sports_event: 1,
   sports_stage: 2,
   sports_level: 3,
-  area: 7 
+  area: 7
 )
 
 User.create!(
@@ -31,7 +31,7 @@ User.create!(
   sports_event: 2,
   sports_stage: 3,
   sports_level: 2,
-  area: 17 
+  area: 17
 )
 
 Post.create!(
@@ -84,3 +84,4 @@ Relationship.create!(
   follower_id: 1,
   following_id: 2
 )
+
